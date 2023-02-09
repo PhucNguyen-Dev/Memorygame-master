@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:textColor="#FFC107"
+        android:id="@+id/resultTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_title"
+        android:textSize="30sp" />
+
+    <TextView
+        android:textColor="#FFC107"
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/result_score"
+        android:textSize="40sp" />
+
+    <TextView
+        android:textColor="#FFC107"
+        android:id="@+id/highScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/high_score"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/homepage2"
+        />
+</LinearLayout>

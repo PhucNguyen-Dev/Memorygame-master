@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".UserActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitleUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tvTitleUser"
+            android:textColor="#FFC107"
+            android:textSize="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/tvNameUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tvNameUser"
+            android:textColor="#FFC107"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/etNameUser"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleUser"></TextView>
+
+        <EditText
+            android:id="@+id/etNameUser"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:hint="Your name..."
+            android:textColor="#FFC107"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toRightOf="@id/tvNameUser"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleUser"></EditText>
+
+        <TextView
+
+            android:id="@+id/tvAgeUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/tvAgeUser"
+            android:textColor="#FFC107"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/spinnerAgeUser"
+            app:layout_constraintTop_toBottomOf="@id/tvNameUser"></TextView>
+
+        <EditText
+            android:id="@+id/spinnerAgeUser"
+            android:layout_width="150dp"
+            android:textColor="#FFC107"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:inputType="number"
+            android:spinnerMode="dropdown"
+            app:layout_constraintLeft_toRightOf="@id/tvNameUser"
+            app:layout_constraintTop_toBottomOf="@id/etNameUser" />
+
+        <Button
+            android:id="@+id/btnConfirmUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:onClick="onConfirmClick"
+            android:text="@string/btnConfirm"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinnerAgeUser"></Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
